@@ -5,9 +5,11 @@ const cors = require("cors")
 const authRouter = require("./routes/auth/auth-routes");
 const adminProductsRouter = require("./routes/admin/products-routes");
 const shopCartRouter = require("./routes/shop/cart-routes");
+require("dotenv").config()
+
 mongoose
   .connect(
-    "mongodb+srv://jayaveldeepak19:cw8fzTgNETmpnZSx@ecommerce-cluster.hfsf6.mongodb.net/"
+    process.env.MONGODB_URI
   )
   .then(() => {
     console.log("MongoDb connected");
