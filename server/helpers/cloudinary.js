@@ -2,9 +2,9 @@ const cloudinary = require("cloudinary").v2
 const multer = require("multer")
 
 cloudinary.config({
-    cloud_name: "dfbwwac4s",
-    api_key: "326729792671826",
-    api_secret: "sWh2vKGM10IsSbtXo3-D2PuIni4",
+    cloud_name: process.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
 })
 
 
