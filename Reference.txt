@@ -1,0 +1,5 @@
+jayaveldeepak19
+cw8fzTgNETmpnZSx
+
+
+mongodb+srv://jayaveldeepak19:<db_password>@ecommerce-cluster.hfsf6.mongodb.net/

@@ -9,13 +9,7 @@ const adminSidebarMenuItems = [
     label: "Products",
     path: "/admin/products",
     icon: <PackageSearch />,
-  },
-  {
-    id: "orders",
-    label: "Orders",
-    path: "/admin/orders",
-    icon: <Folders />,
-  },
+  }
 ];
 
 const MenuItems = ({ setOpen }) => {
