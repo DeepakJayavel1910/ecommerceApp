@@ -51,13 +51,7 @@ function UserCartItemsContent({ cartItem }) {
             ? getCartItem?.quantity + 1
             : getCartItem?.quantity - 1,
       })
-    ).then((data) => {
-      if (data?.payload?.success) {
-        toast({
-          title: "Cart item is updated successfully",
-        });
-      }
-    });
+    )
   }
 
   function handleCartItemDelete(getCartItem) {
